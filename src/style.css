@@ -1,0 +1,143 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Rubik', sans-serif;
+}
+
+
+/* div{
+  display: grid;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+} */
+
+
+
+.input-container {
+  display: flex;
+  background: white;
+  border-radius: 1rem;
+  background: linear-gradient(135deg, #23272F 0%, #14161a 100%);
+  box-shadow: 10px 10px 20px #0e1013, -10px -10px 40px #383e4b;
+}
+
+.input-container input {
+  border-radius: 0.8rem 0 0 0.8rem;
+  background: #23272F;
+  box-shadow: inset 5px 5px 10px #0e1013, inset -5px -5px 10px #383e4b, 0px 0px 100px rgba(255, 212, 59, 0), 0px 0px 100px rgba(255, 102, 0, 0);
+  width: 100%;
+  flex-basis: 75%;
+  border: none;
+  border: 1px solid transparent;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container input:focus {
+  border: 1px solid #FFD43B;
+  outline: none;
+  box-shadow: inset 0px 0px 10px rgba(255, 102, 0, 0.5), inset 0px 0px 10px rgba(255, 212, 59, 0.5), 0px 0px 100px rgba(255, 212, 59, 0.5), 0px 0px 100px rgba(255, 102, 0, 0.5);
+}
+
+.input-container button {
+  flex-basis: 25%;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgb(255, 212, 59) 0%, rgb(255, 102, 0) 100%);
+  box-shadow: 0px 0px 1px rgba(255, 212, 59, 0.5), 0px 0px 1px rgba(255, 102, 0, 0.5);
+  font-weight: 900;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color: #23272F;
+  border: none;
+  width: 100%;
+  border-radius: 0 1rem 1rem 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.input-container button:hover {
+  background-image: url("assets/pika.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (max-width: 500px) {
+  .input-container {
+    flex-direction: column;
+  }
+
+  .input-container input {
+    border-radius: 0.8rem;
+  }
+
+  .input-container button {
+    padding: 1rem;
+    border-radius: 0.8rem;
+  }
+}
+
+.infor2 {
+  width: auto; 
+  padding: 4px 10px; 
+  border-radius: 1px 6px 1px 50px;
+  position: absolute;
+  right: 0; 
+  top: 0; 
+  color: #ffffffdc;
+  font-weight: 700;
+  font-size: 17px; 
+}
+
+.infor3{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border-radius: 17px 70px 70px 1px;
+  font-weight: 900;
+}
+
+.nombre-conter{
+  position: relative;
+  display: flex;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px 18px 50px 0px;
+  background: linear-gradient(100deg,
+  rgb(255, 255, 255),rgb(255, 254, 254),rgba(219, 217, 217, 0.651), rgba(180, 178, 178, 0.774),rgb(255, 255, 255));
+}
+
+#txt{
+  width: 120%;
+}
+
+.tipo-cuadro{
+  position: relative;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Pok%C3%A9mon_GO_logo.svg/2560px-Pok%C3%A9mon_GO_logo.svg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 140px;
+  bottom: 30px;
+  height: 100px;
+}
+
+.color-bajo{
+  height: 10px;
+  border-radius: 0px 0px 5px 5px;
+}
+
+.tipo-logo{
+  display: flex;
+  height: 70px;
+  justify-content: space-between;
+}
+
+.edg{
+  color: transparent;
+}
